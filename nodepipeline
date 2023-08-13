@@ -5,7 +5,7 @@ pipeline {
     stage('Build') {
       steps {
         sh 'docker rmi -f $DOCKER_NODE_IMAGE'
-        sh 'docker rm -f nodecont'
+        sh 'docker rm -f nodeconti'
         sh 'docker build -t $DOCKER_NODE_IMAGE .'
       }
     }
